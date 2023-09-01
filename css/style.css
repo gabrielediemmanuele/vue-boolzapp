@@ -78,7 +78,7 @@
   width: 100%;
   height: 40px;
   padding: 10px;
-  border: 1.5px dashed rgb(43, 226, 113);
+  /* border: 1.5px dashed rgb(43, 226, 113); */
   background-color: #021732;
 
   display: flex;
@@ -110,7 +110,22 @@
 .contacts-cont > .filter-bar {
   width: 100%;
   height: 30px;
+  padding: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #eaeaea;
+
   border: 1.5px dashed rgb(156, 226, 43);
+}
+
+.contacts-cont > .filter-bar .filtering {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 /** CONTACTS (will generated with v-for) **/
