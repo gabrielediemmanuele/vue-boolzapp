@@ -118,11 +118,11 @@
 
   background-color: #eaeaea;
 
-  border: 1.5px dashed rgb(156, 226, 43);
+  /*  border: 1.5px dashed rgb(156, 226, 43); */
 }
 
 .contacts-cont > .filter-bar .filtering {
-  width: 200px;
+  width: 90%;
   border: none;
   border-radius: 5px;
   padding: 3px;
@@ -131,8 +131,56 @@
 /** CONTACTS (will generated with v-for) **/
 .contacts-cont > .contacts-window {
   width: 100%;
-  height: 350px;
-  border: 1.5px dashed rgb(226, 112, 209);
+  height: calc(100% - 110px);
+  background-color: #ffffff;
+  /*  border: 1.5px dashed rgb(226, 112, 209); */
+}
+.contacts-window .gen-contact-cont {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+
+  border-bottom: 1px solid rgb(226, 226, 226);
+
+  display: flex;
+  align-items: center;
+}
+
+.contacts-window .gen-contact-cont .gen-user-img-cont {
+  width: 35px;
+  height: 35px;
+
+  margin-right: 5px;
+}
+.gen-user-img-cont > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.contacts-window .gen-contact-cont .gen-user-info-cont {
+  width: calc(100% - 35px);
+  height: 100%;
+  padding: 3px 3px 3px 8px;
+  /* border: 1px solid red; */
+
+  position: relative;
+}
+
+.gen-user-info-cont .user-info .user-name {
+  font-size: 15px;
+}
+
+.gen-user-info-cont .user-info .user-last-mex {
+  font-size: 10px;
+  color: gray;
+}
+
+.gen-contact-cont .gen-user-info-cont .user-time {
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  top: 2px;
+  right: 5px;
 }
 
 /**! RIGHT AREA **/
