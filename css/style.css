@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* color: white; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -27,11 +29,48 @@
 
   border: 1.5px dashed greenyellow;
 }
+
 /** PROFILE **/
 .contacts-cont > .profile-bar {
   width: 100%;
   height: 40px;
-  border: 1.5px dashed blueviolet;
+  background-color: #6ed563;
+  display: flex;
+  padding: 5px;
+  color: #021732;
+}
+
+.profile-bar > .profile-icon-cont {
+  width: 50%;
+  height: 100%;
+  /* border: 1px dashed red; */
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-bar > .profile-icon-cont .profile-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile-bar > .profile-icon-cont .profile-image > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile-bar > .settings-icons {
+  width: 50%;
+  /* border: 1px dashed blue; */
+  height: 100%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-bar > .settings-icons .fa-solid {
+  margin-left: 10px;
 }
 
 /** ALERT **/
@@ -39,7 +78,17 @@
   width: 100%;
   height: 40px;
   border: 1.5px dashed rgb(43, 226, 113);
+  background-color: #021732;
+
+  display: flex;
+  align-items: center;
 }
+
+.contacts-cont > .alert-bar .alert-icon-cont {
+}
+
+.contacts-cont > .alert-bar .note-cont
+
 
 /** FILTER BAR **/
 .contacts-cont > .filter-bar {
