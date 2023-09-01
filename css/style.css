@@ -20,13 +20,42 @@
   display: flex;
 }
 
+/**! LEFT AREA**/
 .main-cont > .contacts-cont {
   width: 35%;
   height: 100%;
 
   border: 1.5px dashed greenyellow;
 }
+/** PROFILE **/
+.contacts-cont > .profile-bar {
+  width: 100%;
+  height: 40px;
+  border: 1.5px dashed blueviolet;
+}
 
+/** ALERT **/
+.contacts-cont > .alert-bar {
+  width: 100%;
+  height: 40px;
+  border: 1.5px dashed rgb(43, 226, 113);
+}
+
+/** FILTER BAR **/
+.contacts-cont > .filter-bar {
+  width: 100%;
+  height: 30px;
+  border: 1.5px dashed rgb(156, 226, 43);
+}
+
+/** CONTACTS (will generated with v-for) **/
+.contacts-cont > .contacts-window {
+  width: 100%;
+  height: 350px;
+  border: 1.5px dashed rgb(226, 112, 209);
+}
+
+/**! RIGHT AREA **/
 .main-cont > .chat-cont {
   width: 65%;
   height: 100%;
@@ -34,42 +63,21 @@
   border: 1.5px dashed rgb(255, 161, 47);
 }
 
-.contacts-cont > .profile-bar {
-  width: 100%;
-  height: 40px;
-  border: 1.5px dashed blueviolet;
-}
-
-.contacts-cont > .alert-bar {
-  width: 100%;
-  height: 40px;
-  border: 1.5px dashed rgb(43, 226, 113);
-}
-
-.contacts-cont > .filter-bar {
-  width: 100%;
-  height: 30px;
-  border: 1.5px dashed rgb(156, 226, 43);
-}
-
-.contacts-cont > .contacts-window {
-  width: 100%;
-  height: 350px;
-  border: 1.5px dashed rgb(226, 112, 209);
-}
-
+/** UP PROFILE BAR */
 .chat-cont > .up-profile-cont {
   width: 100%;
   height: 40px;
   border: 1.5px dashed rgb(226, 112, 209);
 }
 
+/** CHAT WINDOW **/
 .chat-cont > .messages-cont {
   width: 100%;
   height: calc(100% - 80px);
   border: 1.5px dashed rgb(223, 228, 110);
 }
 
+/** Text input BAR **/
 .chat-cont > .texting-cont {
   width: 100%;
   height: 40px;
