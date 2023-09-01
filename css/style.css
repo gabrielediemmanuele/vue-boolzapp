@@ -15,7 +15,7 @@
   width: 70%;
   height: 500px;
   margin: 20px auto;
-  border: 2px dashed red;
+  border: 1.5px dashed red;
 
   display: flex;
 }
@@ -24,36 +24,54 @@
   width: 35%;
   height: 100%;
 
-  border: 2px dashed greenyellow;
+  border: 1.5px dashed greenyellow;
 }
 
 .main-cont > .chat-cont {
   width: 65%;
   height: 100%;
 
-  border: 2px dashed rgb(255, 161, 47);
+  border: 1.5px dashed rgb(255, 161, 47);
 }
 
 .contacts-cont > .profile-bar {
   width: 100%;
   height: 40px;
-  border: 2px dashed blueviolet;
+  border: 1.5px dashed blueviolet;
 }
 
 .contacts-cont > .alert-bar {
   width: 100%;
   height: 40px;
-  border: 2px dashed rgb(43, 226, 113);
+  border: 1.5px dashed rgb(43, 226, 113);
 }
 
 .contacts-cont > .filter-bar {
   width: 100%;
   height: 30px;
-  border: 2px dashed rgb(156, 226, 43);
+  border: 1.5px dashed rgb(156, 226, 43);
 }
 
 .contacts-cont > .contacts-window {
   width: 100%;
   height: 350px;
-  border: 2px dashed rgb(226, 112, 209);
+  border: 1.5px dashed rgb(226, 112, 209);
+}
+
+.chat-cont > .up-profile-cont {
+  width: 100%;
+  height: 40px;
+  border: 1.5px dashed rgb(226, 112, 209);
+}
+
+.chat-cont > .messages-cont {
+  width: 100%;
+  height: calc(100% - 80px);
+  border: 1.5px dashed rgb(223, 228, 110);
+}
+
+.chat-cont > .texting-cont {
+  width: 100%;
+  height: 40px;
+  border: 1.5px dashed rgb(226, 112, 209);
 }
