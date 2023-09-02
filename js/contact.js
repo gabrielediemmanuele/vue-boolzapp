@@ -99,7 +99,7 @@ const contacts = [
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Waju, sto a perdere l'anima!",
+        message: "Waju, sto a perdere la testa!",
         status: "received",
       },
     ],

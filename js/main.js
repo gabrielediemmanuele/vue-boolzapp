@@ -28,7 +28,7 @@ createApp({
 
       //*time out per la risposta
       setTimeout(() => {
-        this.otherNewMessage(activeContact), 2000;
+        this.otherNewMessage(activeContact), 3000;
       });
     },
     //* risposta al messaggio

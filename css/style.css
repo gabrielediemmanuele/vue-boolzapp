@@ -263,7 +263,7 @@
   margin: 10px 10px 10px auto;
   background-color: #6ed563;
   border-radius: 7px 0px 7px 7px;
-  width: auto;
+  width: 200px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -272,7 +272,7 @@
 .received {
   background-color: #ffffff;
   border-radius: 0 7px 7px;
-  width: auto;
+  width: 200px;
   padding: 15px;
   margin: 10px;
   display: flex;
@@ -285,7 +285,7 @@
 }
 
 .sent span {
-  margin: 0 0 0 auto;
+  margin: 5px 0 0 auto;
   font-size: 7px;
   color: #021732;
 }
@@ -293,7 +293,7 @@
 .received span {
   font-size: 7px;
   color: grey;
-  margin: 0 0 auto 0;
+  margin: 5px 0 0 auto;
 }
 
 /** Text input BAR **/
