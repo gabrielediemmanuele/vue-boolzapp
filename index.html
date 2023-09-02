@@ -78,6 +78,7 @@
                 class="filtering"
                 type="text"
                 placeholder="Ceca o inizia una nuova chat"
+                v-model="filterName"
               />
             </div>
 
@@ -87,16 +88,17 @@
               <div v-for="(contact, index) in contacts"
               @click="clickContact(index)"
                class="gen-contact-cont"
-               :class="(index == activeContact) ? 'active-user-chat' : ''">
-                <div class="gen-user-img-cont">
+               :class="(index == activeContact) ? 'active-user-chat' : ''"
+               ><!-- v-if="contact.name.toLowerCase().includes(filterName)" -->
+                <div class="gen-user-block" v-if="contact.name.toLowerCase().includes(filterName)">
                   <img :src="contact.avatar" :alt="contact.name" />
-                </div>
-                <div class="gen-user-info-cont">
-                  <div class="user-info">
-                    <div class="user-name">{{ contact.name }}</div>
-                    <div class="user-last-mex">Ultimo messaggio inviato</div>
+                  <div class="gen-user-text">
+                    <span class="user-name">{{ contact.name }}</span>
+                    <span class="user-last-mex">Ultimo messaggio inviato</span>
                   </div>
-                  <div class="user-time">12:00</div>
+                  <div class="user-time-cont">
+                    <span class="user-time">12:00</span>
+                  </div>
                 </div>
               </div>
             </div>

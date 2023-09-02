@@ -6,6 +6,7 @@ createApp({
       contacts,
       activeContact: 0,
       newUserMessage: "",
+      filterName: "",
     };
   },
 
@@ -14,6 +15,7 @@ createApp({
     clickContact(index) {
       this.activeContact = index;
     },
+
     //* nuovo messaggio
     sendNewMessage(activeContact) {
       const newMex = {
