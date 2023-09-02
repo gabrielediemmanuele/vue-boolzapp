@@ -5,6 +5,7 @@ createApp({
     return {
       contacts,
       activeContact: 0,
+      newUserMessage: "",
     };
   },
 
@@ -13,5 +14,17 @@ createApp({
     clickContact(index) {
       this.activeContact = index;
     },
+    //* nuovo messaggio
+    sendNewMessage(activeContact) {
+      const newMex = {
+        date: "random",
+        message: this.newUserMessage,
+        status: "sent",
+      };
+      this.contacts[activeContact].messages.push(newMex);
+      this.newUserMessage = "";
+      //*time out per la risposta
+    },
+    //* risposta al messaggio
   },
 }).mount("#app");

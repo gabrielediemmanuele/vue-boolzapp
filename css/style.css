@@ -255,6 +255,7 @@
   padding: 10px;
   /* border: 1.5px dashed rgb(223, 228, 110); */
   background-image: url(../img/mine.jpg);
+  overflow-x: auto;
 }
 
 .messages-cont .message-balloon {
