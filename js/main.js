@@ -23,6 +23,7 @@ createApp({
       };
       this.contacts[activeContact].messages.push(newMex);
       this.newUserMessage = "";
+
       //*time out per la risposta
       setTimeout(() => {
         this.otherNewMessage(activeContact), 2000;
