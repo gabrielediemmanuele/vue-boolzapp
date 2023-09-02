@@ -102,8 +102,8 @@
             </div>
           </div>
 
-          <!-- Chat container -->
-          <div class="chat-cont">
+          <!-- Chat WINDOW -->
+          <div class="chat-window">
             <!-- TOP BAR -->
             <div class="up-profile-cont">
               <!--User img and info -->
@@ -125,41 +125,15 @@
             </div>
             <!-- MESSAGE CONTAINER -->
             <div class="messages-cont" >
-              <!-- prova -->
-              <div class="user-message-cont">
-                <div class="user-new-mex">
-                  <div class="mex-tex">Ciao Bilbo, dopo ci vediamo a gran burrone?</div>
-                  <div class="mex-time">09:45</div>
+              <div class="message-balloon" v-for="(message, index) in contacts[activeContact].messages">
+                <div :class="message.status">
+                  <div class="message-text">
+                    <p>{{ message.message }}</p>
+                  </div>
+                  <span>{{ message.date }}</span>
                 </div>
               </div>
-              <!-- prova -->
-              <div class="other-message-cont">
-                <div class="other-new-mex">
-                  <div class="mex-tex">Si, porta con te un pò di erba pipa!</div>
-                  <div class="mex-time">09:48</div>
-                </div>
-              </div>
-              <!-- prova -->
-              <div class="user-message-cont">
-                <div class="user-new-mex">
-                  <div class="mex-tex">Aahahah va bene, senz'altro!</div>
-                  <div class="mex-time">09:49</div>
-                </div>
-              </div>
-              <div class="user-message-cont">
-                <div class="user-new-mex">
-                  <div class="mex-tex">Tu invece? Assicurati di lasciare l'anello a casa, lo sai che è pericoloso!</div>
-                  <div class="mex-time">09:51</div>
-                </div>
-              </div>
-              <!-- prova -->
-              <div class="other-message-cont">
-                <div class="other-new-mex">
-                  <div class="mex-tex">...non vedo quella vecchia cianfrusaglia da tempo! Non ti preoccupare!</div>
-                  <div class="mex-time">09:53</div>
-                </div>
-              </div>
-              <!-- prova --> 
+
             </div>
             <!-- INPUT TEXT CONTAINER -->
             <div class="messaging-cont">

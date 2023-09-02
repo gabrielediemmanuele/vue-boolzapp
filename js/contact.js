@@ -6,18 +6,23 @@ const contacts = [
     messages: [
       {
         date: "10/01/2020 15:30:55",
-        message: "Hai portato a spasso il cane?",
-        status: "sent",
+        message: "That's it! Impegnati! 🙂",
+        status: "received",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Ricordati di stendere i panni",
+        message: "Va bene, grazie Tiziano 😁",
         status: "sent",
       },
       {
         date: "10/01/2020 16:15:22",
-        message: "Tutto fatto!",
+        message: "E non esagerare con i dettagli, è un overkill!! ",
         status: "received",
+      },
+      {
+        date: "10/01/2020 15:50:00",
+        message: "Va bene, va bene!😤",
+        status: "sent",
       },
     ],
   },
@@ -33,12 +38,12 @@ const contacts = [
       },
       {
         date: "20/03/2020 16:30:55",
-        message: "Bene grazie! Stasera ci vediamo?",
+        message: "Bene grazie! Come va l'esercizio?",
         status: "received",
       },
       {
         date: "20/03/2020 16:35:00",
-        message: "Mi piacerebbe ma devo andare a fare la spesa.",
+        message: "Tutto ok! Grazie! tu?",
         status: "sent",
       },
     ],
@@ -50,17 +55,17 @@ const contacts = [
     messages: [
       {
         date: "28/03/2020 10:10:40",
-        message: "La Marianna va in campagna",
+        message: "Domani abbiamo un recap?",
         status: "received",
       },
       {
         date: "28/03/2020 10:20:10",
-        message: "Sicuro di non aver sbagliato chat?",
+        message: "Penso di si, guardiamo su slack!",
         status: "sent",
       },
       {
         date: "28/03/2020 16:15:22",
-        message: "Ah scusa!",
+        message: "Si meglio dare un occhiata!",
         status: "received",
       },
     ],
@@ -72,12 +77,12 @@ const contacts = [
     messages: [
       {
         date: "10/01/2020 15:30:55",
-        message: "Lo sai che ha aperto una nuova pizzeria?",
+        message: "Ciao Giuseppe, mi serve una mano!",
         status: "sent",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Si, ma preferirei andare al cinema",
+        message: "Vieni su zoom?",
         status: "received",
       },
     ],
@@ -89,12 +94,12 @@ const contacts = [
     messages: [
       {
         date: "10/01/2020 15:30:55",
-        message: "Ricordati di chiamare la nonna",
+        message: "Vincenzo, come và con l'esercizio di oggi?",
         status: "sent",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Va bene, stasera la sento",
+        message: "Waju, sto a perdere l'anima!",
         status: "received",
       },
     ],
@@ -106,34 +111,41 @@ const contacts = [
     messages: [
       {
         date: "10/01/2020 15:30:55",
-        message: "Ciao Claudia, hai novità?",
+        message:
+          "Ciao Miruna, mi manderesti il link di quella nota su Bootstrap?",
         status: "sent",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Non ancora",
+        message: "Ciao! si, solo un secondo!",
         status: "received",
       },
       {
         date: "10/01/2020 15:51:00",
-        message: "Nessuna nuova, buona nuova",
+        message: "Grazie mille!",
         status: "sent",
+      },
+      {
+        date: "10/01/2020 15:50:00",
+        message: "https://getbootstrap.com/docs/5.2/components/carousel/",
+        status: "received",
       },
     ],
   },
   {
-    name: "Alessio",
+    name: "Fabio",
     avatar: "./img/avatar_7.jpg",
     visible: true,
     messages: [
       {
         date: "10/01/2020 15:30:55",
-        message: "Fai gli auguri a Martina che è il suo compleanno!",
+        message: "Ciao Fabio! Mi ricordi come si metteva l'ombra esterna?",
         status: "sent",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "Grazie per avermelo ricordato, le scrivo subito!",
+        message:
+          "Ciao! Devi utilizzare box-shadow, per sicurezza controlla la documentazione su w3School!",
         status: "received",
       },
     ],
@@ -144,13 +156,18 @@ const contacts = [
     visible: true,
     messages: [
       {
+        date: "10/01/2020 15:50:00",
+        message: "Ciao Luigi, mi serve una mano!",
+        status: "sent",
+      },
+      {
         date: "10/01/2020 15:30:55",
-        message: "Ciao, andiamo a mangiare la pizza stasera?",
+        message: "Ciao, vieni su zoom!",
         status: "received",
       },
       {
         date: "10/01/2020 15:50:00",
-        message: "No, l'ho già mangiata ieri, ordiniamo sushi!",
+        message: "Arrivo subito!",
         status: "sent",
       },
       {
