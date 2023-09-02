@@ -2,6 +2,16 @@
 const { createApp } = Vue;
 createApp({
   data() {
-    return {};
+    return {
+      contacts,
+      activeContact: 0,
+    };
+  },
+
+  //* Methods
+  methods: {
+    clickContact(index) {
+      this.activeContact = index;
+    },
   },
 }).mount("#app");

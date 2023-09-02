@@ -84,13 +84,16 @@
             <!-- CONTACTS BAR -->
             <div class="contacts-window">
               <!-- User Card da generare -->
-              <div class="gen-contact-cont">
+              <div v-for="(contact, index) in contacts"
+              @click="clickContact(index)"
+               class="gen-contact-cont"
+               :class="(index == activeContact) ? 'active-user-chat' : ''">
                 <div class="gen-user-img-cont">
-                  <img src="./img/avatar_1.jpg" alt="" />
+                  <img :src="contact.avatar" :alt="contact.name" />
                 </div>
                 <div class="gen-user-info-cont">
                   <div class="user-info">
-                    <div class="user-name">Bilbo</div>
+                    <div class="user-name">{{ contact.name }}</div>
                     <div class="user-last-mex">Ultimo messaggio inviato</div>
                   </div>
                   <div class="user-time">12:00</div>
