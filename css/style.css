@@ -56,7 +56,7 @@
   margin-right: 10px;
 }
 .profile-bar > .profile-icon-cont .profile-image > img {
-  width: 100%;
+  width: 25px;
   border-radius: 50%;
 }
 
@@ -211,8 +211,8 @@
   width: 50%;
   height: 100%;
   /* border: 1px dashed red; */
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .up-profile-cont .user-icon-cont .personal-user-image {

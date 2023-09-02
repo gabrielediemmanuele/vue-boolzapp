@@ -1,6 +1,6 @@
 const contacts = [
   {
-    name: "Michele",
+    name: "Tiziano",
     avatar: "./img/avatar_1.jpg",
     visible: true,
     messages: [
@@ -22,7 +22,7 @@ const contacts = [
     ],
   },
   {
-    name: "Fabio",
+    name: "Luigi",
     avatar: "./img/avatar_2.jpg",
     visible: true,
     messages: [
@@ -44,7 +44,7 @@ const contacts = [
     ],
   },
   {
-    name: "Samuele",
+    name: "Mauro",
     avatar: "./img/avatar_3.jpg",
     visible: true,
     messages: [
@@ -66,7 +66,7 @@ const contacts = [
     ],
   },
   {
-    name: "Alessandro B.",
+    name: "Giuseppe",
     avatar: "./img/avatar_4.jpg",
     visible: true,
     messages: [
@@ -83,7 +83,7 @@ const contacts = [
     ],
   },
   {
-    name: "Alessandro L.",
+    name: "Vincenzo",
     avatar: "./img/avatar_5.jpg",
     visible: true,
     messages: [
@@ -100,7 +100,7 @@ const contacts = [
     ],
   },
   {
-    name: "Claudia",
+    name: "Miruna",
     avatar: "./img/avatar_6.jpg",
     visible: true,
     messages: [
@@ -122,7 +122,7 @@ const contacts = [
     ],
   },
   {
-    name: "Federico",
+    name: "Alessio",
     avatar: "./img/avatar_7.jpg",
     visible: true,
     messages: [
@@ -139,7 +139,7 @@ const contacts = [
     ],
   },
   {
-    name: "Davide",
+    name: "Luigi",
     avatar: "./img/avatar_8.jpg",
     visible: true,
     messages: [

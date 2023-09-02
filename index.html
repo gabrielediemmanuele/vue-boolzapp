@@ -50,9 +50,9 @@
             <div class="profile-bar">
               <div class="profile-icon-cont">
                 <div class="profile-image">
-                  <img src="./img/avatar_1.jpg" alt="" />
+                  <img src="./img/face_co.png" alt="" />
                 </div>
-                <div>Gandalf</div>
+                <div>Gh0stWhisp</div>
               </div>
               <div class="settings-icons">
                 <div><i class="fa-solid fa-circle-notch fa-sm"></i></div>
@@ -107,12 +107,12 @@
             <!-- TOP BAR -->
             <div class="up-profile-cont">
               <!--User img and info -->
-              <div class="user-icon-cont">
+              <div class="user-icon-cont" >
                 <div class="personal-user-image">
-                  <img src="./img/avatar_2.jpg" alt="" />
+                  <img :src="contacts[activeContact].avatar" :alt="contacts[activeContact].name" />
                 </div>
                 <div class="user-info-cont">
-                  <div class="user-name">Bilbo</div>
+                  <div class="user-name">{{ contacts[activeContact].name }}</div>
                   <div class="user-last-access">ultimo accesso alle 09:45</div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
               </div>
             </div>
             <!-- MESSAGE CONTAINER -->
-            <div class="messages-cont">
+            <div class="messages-cont" >
               <!-- prova -->
               <div class="user-message-cont">
                 <div class="user-new-mex">

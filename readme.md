@@ -42,4 +42,10 @@ permette di cancellare il messaggio selezionato.
 
 # STEPS
 
-1. Realizzare una solida base HTML e CSS e poi fare alcuni collegamenti tra l html e il vueJS.
+1. (Milestone 1) Realizzare una solida base HTML e CSS e poi fare alcuni collegamenti tra l html e il vueJS.
+
+2. Utilizzare un v-for nel container dei contatti "generati" per fare si che si creino in automatico con Nome e click personalizzato:
+
+   - cliccando sul contatto attivo, assegni la classe di background differente.
+
+3. (Milestone 2) Devo fare in modo che, cliccando sul conttato, oltre che cambiare l'immagine nella barra in alto, cambia anche il container dei messaggi, cosi da visualizzare la chat corrente. Penso di poter fare tutto con il v-for.
