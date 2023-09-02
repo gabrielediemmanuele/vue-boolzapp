@@ -24,7 +24,18 @@ createApp({
       this.contacts[activeContact].messages.push(newMex);
       this.newUserMessage = "";
       //*time out per la risposta
+      setTimeout(() => {
+        this.otherNewMessage(activeContact), 2000;
+      });
     },
     //* risposta al messaggio
+    otherNewMessage(activeContact) {
+      const newOtherMex = {
+        date: "random",
+        message: "Ok!",
+        status: "received",
+      };
+      this.contacts[activeContact].messages.push(newOtherMex);
+    },
   },
 }).mount("#app");
