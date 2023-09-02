@@ -141,9 +141,13 @@
   padding: 5px;
 
   border-top: 1px solid rgb(226, 226, 226);
-
   display: flex;
   align-items: center;
+}
+
+/*! Switcher per il colore della chat attiva */
+.active-user-chat {
+  background-color: #e6e6e6;
 }
 
 .contacts-window .gen-contact-cont .gen-user-img-cont {
@@ -308,14 +312,37 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .chat-cont > .messaging-cont .emoji-cont {
+  width: 10%;
+}
+
+.chat-cont > .messaging-cont .input-text-cont {
+  width: 80%;
 }
 
 .chat-cont > .messaging-cont .input-text-cont > input {
-  width: 300px;
+  border: none;
+  width: 100%;
+  padding: 5px 5px 5px 15px;
+  border-radius: 10px;
 }
 
 .chat-cont > .messaging-cont .micro-cont {
+  width: 10%;
+  display: flex;
+  justify-content: end;
 }
+
+/** 
+ logo 1 #6ed563
+ logo 2 #021732
+ 
+ general asset #eaeaea
+ alert #8edafc
+selected profile hover #e9ebeb
+type text bar #f3eeea
+icons #b1b1b1
+*/
