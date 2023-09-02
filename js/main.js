@@ -40,5 +40,10 @@ createApp({
       };
       this.contacts[activeContact].messages.push(newOtherMex);
     },
+
+    //* delete message
+    deleteMessage(index, activeContact) {
+      this.contacts[activeContact].messages.splice(index, 1);
+    },
   },
 }).mount("#app");
