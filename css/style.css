@@ -305,6 +305,7 @@
   border: none;
 }
 
+/*message text */
 .messages-cont .message-balloon .message-text {
   display: flex;
 }
