@@ -279,6 +279,9 @@
   color: #021732;
   border: 1px solid #021732;
 }
+.hidden-menu-cont > span > .fa-solid {
+  margin-right: 3px;
+}
 .message-balloon .hidden-menu-cont > span:hover {
   color: #6ed563;
   background-color: #021732;
