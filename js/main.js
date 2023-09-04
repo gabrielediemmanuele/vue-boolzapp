@@ -22,6 +22,7 @@ createApp({
         date: "random",
         message: this.newUserMessage,
         status: "sent",
+        hiddenmenu: false,
       };
       this.contacts[activeContact].messages.push(newMex);
       this.newUserMessage = "";
@@ -37,6 +38,7 @@ createApp({
         date: "random",
         message: "Ok!",
         status: "received",
+        hiddenmenu: false,
       };
       this.contacts[activeContact].messages.push(newOtherMex);
     },

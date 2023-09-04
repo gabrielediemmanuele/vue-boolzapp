@@ -254,23 +254,52 @@
 
 .messages-cont .message-balloon {
   display: flex;
+  position: relative;
+}
+
+/*TODO Hidden Menu */
+.messages-cont .message-balloon .hidden-menu-cont {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  background-color: white;
+
+  z-index: 3;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.message-balloon .hidden-menu-cont > span {
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+  color: #021732;
+  border: 1px solid #021732;
+}
+.message-balloon .hidden-menu-cont > span:hover {
+  color: #6ed563;
+  background-color: #021732;
+}
+
+.message-balloon .hidden-menu-cont > span:first-child {
+  border-radius: 7px 7px 0 0;
+}
+.message-balloon .hidden-menu-cont > span:last-child {
+  border-radius: 0 0 7px 7px;
 }
 
 .messages-cont .message-balloon button {
   width: 20px;
   height: 20px;
-  border: 1px solid rgb(0, 0, 0);
   padding: 2px;
   margin-bottom: 5px;
-  background-color: transparent;
   font-size: 10px;
   cursor: pointer;
-  display: none;
-  border-radius: 50%;
-}
-
-.messages-cont .message-balloon:hover button {
-  display: block;
+  background-color: transparent;
+  border: none;
 }
 
 .messages-cont .message-balloon .message-text {
