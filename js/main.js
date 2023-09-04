@@ -18,8 +18,12 @@ createApp({
 
     //* nuovo messaggio
     sendNewMessage(activeContact) {
+      //* DateTime Luxon
+      let DateTime = luxon.DateTime;
+      const now = DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss");
+
       const newMex = {
-        date: "random",
+        date: now,
         message: this.newUserMessage,
         status: "sent",
         hiddenmenu: false,
