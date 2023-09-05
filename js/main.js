@@ -7,6 +7,9 @@ createApp({
       activeContact: 0,
       newUserMessage: "",
       filterName: "",
+      profileImage: "./img/face_co.png",
+      hiddenProfImg: false,
+      hiddenProfMenu: false,
     };
   },
 

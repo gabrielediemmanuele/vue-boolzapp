@@ -19,6 +19,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/extra.css">
 
     <!-- Font Awesome -->
     <link
@@ -54,15 +55,23 @@ https://cdn.jsdelivr.net/npm/luxon@3.4.2/build/global/luxon.min.js
             <!-- PROFILE BAR-->
             <div class="profile-bar">
               <div class="profile-icon-cont">
-                <div class="profile-image">
-                  <img src="./img/face_co.png" alt="" />
+                <div class="profile-image" @click="hiddenProfImg=!hiddenProfImg">
+                  <img :src="profileImage" :alt="profileImage" />
+                </div>
+                <div class="hidden-prof-img" v-if="hiddenProfImg === true">
+                  <img :src="profileImage" :alt="profileImage" />
                 </div>
                 <div>Gh0stWhisp</div>
               </div>
               <div class="settings-icons">
-                <div><i class="fa-solid fa-circle-notch fa-sm"></i></div>
+                <div ><i class="fa-solid fa-circle-notch fa-sm"></i></div>
                 <div><i class="fa-solid fa-message fa-sm"></i></div>
-                <div><i class="fa-solid fa-ellipsis-vertical fa-sm"></i></div>
+                <div @click="hiddenProfMenu=!hiddenProfMenu"><i class="fa-solid fa-ellipsis-vertical fa-sm"></i></div>
+                <div class="hidden-prof-menu" v-if="hiddenProfMenu === true">
+                  <span>Settings</span>
+                  <span>Porfilo Utente</span>
+                  <span>+ Nuovo contatto</span>
+                </div>
               </div>
             </div>
 
