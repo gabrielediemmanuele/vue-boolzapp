@@ -4,17 +4,19 @@
   z-index: 4;
   position: absolute;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .profile-bar .settings-icons .fa-solid:hover {
   color: white;
+  cursor: pointer;
 }
 /**Profile menu settings **/
 .settings-icons .hidden-prof-menu {
   width: 100px;
   position: absolute;
-  top: 3px;
-  left: 50px;
+  top: 25px;
+  left: 35px;
 
   background-color: white;
 
@@ -23,6 +25,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  cursor: pointer;
 }
 
 .settings-icons .hidden-prof-menu > span {
@@ -32,6 +35,7 @@
   padding: 5px;
   color: #021732;
   border: 1px solid #021732;
+  cursor: pointer;
 }
 .settings-icons .hidden-prof-menu > span:last-child {
   border-radius: 0 0 7px 7px;
@@ -47,9 +51,27 @@
 /** Alert */
 .alert-bar:hover {
   background-color: #b2cbeb;
+  cursor: pointer;
 }
 
 /** Filter Bar*/
 .filter-bar > .fa-solid {
   margin-right: 5px;
+}
+
+/** Up-user-cont */
+.up-profile-cont .up-settings-icons .fa-solid:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/** messaging cont icons */
+.messaging-cont .emoji-cont .fa-regular:hover {
+  color: #6ed563;
+  cursor: pointer;
+}
+
+.messaging-cont .micro-cont .fa-solid:hover {
+  color: rgb(192, 69, 69);
+  cursor: pointer;
 }

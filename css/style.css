@@ -58,6 +58,7 @@
 .profile-bar > .profile-icon-cont .profile-image > img {
   width: 25px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .profile-bar > .settings-icons {
