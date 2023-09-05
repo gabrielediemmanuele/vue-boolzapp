@@ -1,13 +1,15 @@
+/**Profile extra**/
 .profile-icon-cont .hidden-prof-img img {
   width: 200px;
   z-index: 4;
   position: absolute;
+  border-radius: 50%;
 }
 
 .profile-bar .settings-icons .fa-solid:hover {
   color: white;
 }
-
+/**Profile menu settings **/
 .settings-icons .hidden-prof-menu {
   width: 100px;
   position: absolute;
@@ -40,4 +42,14 @@
 .settings-icons .hidden-prof-menu > span:hover {
   background-color: #6ed563;
   color: #021732;
+}
+
+/** Alert */
+.alert-bar:hover {
+  background-color: #b2cbeb;
+}
+
+/** Filter Bar*/
+.filter-bar > .fa-solid {
+  margin-right: 5px;
 }
