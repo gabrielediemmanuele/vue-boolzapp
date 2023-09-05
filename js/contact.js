@@ -100,6 +100,44 @@ const contacts = [
     ],
   },
   {
+    name: "Umberto",
+    avatar: "./img/avatar_8.jpg",
+    visible: true,
+    messages: [
+      {
+        date: "10/01/2020 15:30:55",
+        message: "Ciao Umberto! come va?",
+        status: "sent",
+        hiddenmenu: false,
+      },
+      {
+        date: "10/01/2020 15:50:00",
+        message: "Tutto bene tu?",
+        status: "received",
+        hiddenmenu: false,
+      },
+    ],
+  },
+  {
+    name: "Carlo",
+    avatar: "./img/avatar_8.jpg",
+    visible: true,
+    messages: [
+      {
+        date: "10/01/2020 15:30:55",
+        message: "Ciao Carlo, mi ricordi come fare il push?",
+        status: "sent",
+        hiddenmenu: false,
+      },
+      {
+        date: "10/01/2020 15:50:00",
+        message: "Certo, un attimo che ti spiego!",
+        status: "received",
+        hiddenmenu: false,
+      },
+    ],
+  },
+  {
     name: "Vincenzo",
     avatar: "./img/avatar_5.jpg",
     visible: true,
