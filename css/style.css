@@ -261,7 +261,7 @@
 .messages-cont .message-balloon .hidden-menu-cont {
   position: absolute;
   top: 35px;
-  right: 25px;
+
   background-color: white;
 
   z-index: 3;
@@ -313,7 +313,9 @@
 .sent button {
   margin: 0 0 0 auto;
 }
-
+.message-balloon .sent > .hidden-menu-cont {
+  right: 18px;
+}
 .sent {
   margin: 10px 10px 10px auto;
   background-color: #6ed563;
